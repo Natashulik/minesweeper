@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+  }
+html {
+  box-sizing: border-box;
+}
+
+  body {
+    background-image: url('https://catherineasquithgallery.com/uploads/posts/2023-02/thumbs/1676615716_catherineasquithgallery-com-p-zelenii-fon-dlya-instagramma-66.jpg');
+    background-size: cover;
+   
+    }
+
+  .wrapper {
+    margin: 0 auto;
+    max-width: 1280px;
+    min-height: 100vh; 
+    background-color:rgba(119, 182, 151, 0.9);
+    
+   }
+
+   .wrapper.dark {
+   background-color:rgba(17, 69, 45, 0.9);
+   }
+
+  .header {
+    height: 60px;
+    line-height: 60px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    text-align: center;
+    color: rgb(242, 254, 133);
+  }
+
+  
+  .main {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .info {
+    width: 250px;
+    height:  400px;
+ 
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info_middle {
+    width: 250px;
+  }
+
+  .time,
+  .score,
+  .progress,
+  .create,
+  .select,
+  .sound,
+  .theme {
+    display: flex;
+   
+  }
+
+  .create {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 26px;
+    letter-spacing: 1.1px;
+    margin-top: 50px;
+   
+  }
+
+  .timeText,
+  .scoreText,
+  .progressText {
+    width: 120px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 26px;
+    letter-spacing: 1.1px;
+    margin-right: 20px;
+
+  }
+  
+  .showTime,
+  .showMines,
+  .showProgress {
+    color: rgb(242, 254, 133);
+   }
+
+   .selectText,
+   .mineText,
+   .soundText,
+   .themeText {
+    width: 100px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 1.0px;
+    margin-right: 20px;
+    margin-top: 5px;
+   }
+
+ .size,
+ .mineCreate   {
+    width: 85px;
+    height: 28px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border-color: gray;
+      }
+
+  .size {
+    width: 95px;
+  }
+/*-------------------*/
+.soundSwitch,
+.themeSwitch {
+	display: inline-block;
+	overflow: hidden;
+}
+.toggle-item {
+ 
+	float: left;
+}
+.toggle-item input[type=radio] {
+	display: none;
+}
+.toggle-item label {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+	display: inline-block;
+	padding: 0px 13px;   
+	line-height: 28px;    
+	border: 1px solid #1a1a1a;
+   margin-top: 5px;
+	cursor: pointer;
+	user-select: contain;   
+  background: white;
+}
+
+.themeSwitch .toggle-item label {
+  padding: 0px 9px 0 12px;  
+}
+ 
+.soundSwitch  .item-1 label,
+.themeSwitch  .item-1 label {
+	border-radius: 7px 0 0 7px;
+}
+.soundSwitch .item-2 label,
+.themeSwitch .item-2 label {
+	border-radius: 0 7px 7px 0;
+}
+ 
+/* Checked */
+.soundSwitch .item-1 input[type=radio]:checked + label,
+.themeSwitch .item-1 input[type=radio]:checked + label {
+	background:#bbffbb;
+}
+.soundSwitch  .item-2 input[type=radio]:checked + label,
+.themeSwitch .item-2 input[type=radio]:checked + label {
+  background:#bbffbb;
+}
+
+.buttonStart {
+  margin-top: 5%;
+  margin-left: 5%;
+  border: 1px solid black;
+  width: 200px;
+  height: 33px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 10px;
+  background:rgb(230, 230, 230);
+  box-shadow: inset 4px 4px 6px white,
+  inset -3px -3px 6px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgb(180, 176, 176);
+  cursor: pointer;
+}
+
+/*------------*/
+  .area {
+    display: grid;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border: 1px solid rgb(126, 124, 124);
+  
+  
+  }    
+
+  button {
+    height: 40px;
+    background-color: rgb(226, 226, 226);
+    font-size: 24px;
+    font-weight: 600;
+    box-shadow: inset 2px 2px 6px white,
+    inset -2px -2px 6px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(147, 146, 146);
+  
+    }
+
+  .button_middle {
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .button_small {
+    height: 20px;
+    font-size: 14px;
+  }
+
+  .visited {
+  /*  background-color: rgb(164, 233, 209);*/
+   background-color: rgb(182, 253, 202);
+   box-shadow: inset 3px 3px 5px #0002,
+    inset -2px -2px 5px #0002;
+  }
+
+  .one, 
+  .two, 
+  .three,
+  .four,
+  .five,
+  .six,
+  .seven,
+  .eight {
+    font-family: 'Montserrat';
+    font-weight: 700;
+  }
+
+  .one {
+    color: blue;
+  }
+
+  .two {
+    color: rgb(15, 143, 15);
+  }
+
+  .three {
+    color: red;
+  }
+
+  .four {
+    color: rgb(3, 3, 112);
+  }
+  
+
+  .five {
+    color: rgb(132, 6, 6);
+    }
+  
+  .six{
+     color: rgb(205, 165, 5);
+      }
+
+  .seven {
+    color: rgb(2, 136, 107);
+        }
+
+  .eight {
+    color: rgb(86, 193, 5);
+        }
+  
+  .image_bomb,
+  .image_flag {
+    width: auto;
+    height: 25px;
+  }
+
+  .button_small .image_bomb,
+  .button_small .image_flag  {
+    width: auto;
+    height: 18px;
+  }
+
+
+  p.yellow {
+    color: rgb(242, 254, 133);
+  }
+
+    /*-------------------*/
+    
+  
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility .3s;
+  }
+  
+  .modal-content-win,
+  .modal-content-lose {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    
+  }
+  .modal-content-lose {
+    width: 300px;
+    height: 85px;
+    color: rgb(236, 2, 2);
+  }
+
+  .modal-content-win {
+    width: 370px;
+    height: 115px;
+    color:rgb(19, 131, 56);
+  }
+  
+  .close-modal-win, 
+  .close-modal-lose{
+    margin-top: 20px;
+    border: 1px solid black;
+    width: 100px;
+    height: 40px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 10px;
+    background:rgb(230, 230, 230);
+    box-shadow: inset 4px 4px 6px white,
+    inset -3px -3px 6px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgb(180, 176, 176);  
+    cursor: pointer;
+   
+  }
+  
+  
+
+  /*--------адаптив--------------*/
+
+  @media (max-width: 930px) {
+
+    .main {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+ 
+  }
